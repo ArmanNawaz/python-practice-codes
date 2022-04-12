@@ -34,9 +34,9 @@ def solve(queries, n):
         if prime[number]:
             for multiple in range(number * number, n + 1, number):
                 prime[multiple] = False
-    print(prime)
-    print(cp)
-    print(primeCounter)
+    # print(prime)
+    # print(cp)
+    # print(primeCounter)
     for each in queries:
         l, r = each[0], each[1]
         ans = primeCounter[r] - primeCounter[l - 1]
