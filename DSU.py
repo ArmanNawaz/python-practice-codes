@@ -7,7 +7,7 @@ def findSet(node, parent):
 
 def unionSet(u, v, parent):
 
-    # This is condition is only for undirected graph
+    # This if condition is only for undirected graph
     # This also implements Union by Rank in undirected graph
     if u > v:
         u, v = v, u
