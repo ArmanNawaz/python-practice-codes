@@ -18,13 +18,13 @@ def primsMST(graph, vertices):
         node = tup[1][0]
         
         for nbr in range(vertices):
-            # graph[node][nbr] = 0 means there is no edge b/w node and nbr
+            # graph[node][nbr] = -1 means there is no edge b/w node and nbr
             if visited[nbr] == False and graph[node][nbr] != -1:
                 if distance[nbr] > graph[node][nbr]:
                     distance[nbr] = graph[node][nbr]
                     heappush(minHeap, (distance[nbr], (nbr, distance[nbr])))
         visited[node] = True
-    # print(distance)
+    
     # Return MST Cost
     return sum(distance)
 
