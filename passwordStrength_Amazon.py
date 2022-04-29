@@ -12,7 +12,7 @@
 # 'thi', 'si', 'sbe', 'aut', 'if', 'ul', 'pla', 'ce'
 
 
-def strength(password):
+def calculateStrength(password):
     vowel = 0
     consonant = 0
     strength = 0
@@ -31,5 +31,5 @@ def strength(password):
 if __name__ == '__main__':
     password = "thisisbeautifulplace"
 
-    ans = strength(password)
+    ans = calculateStrength(password)
     print(ans)
